@@ -9,6 +9,10 @@
         .text-right {
             text-align: right;
         }
+       a[href^="mailto:"], a[href^="tel:"]{
+            text-decoration: none;
+            color: black;
+        }
     </style>
 </head>
 
@@ -19,9 +23,9 @@
         que se comporte como un elemento en bloque y que salte de linea 
         Tambien podriamos usar parrafos que son elementos en bloque para que salten del linea y ajustar los
         margenes por css.
-        Para el mail y el telefono quiero crear enlaces para practicar mailto y tel aunque no esten muy recomendados
-        en la web por temas de spam
-        Voy a crear un div que encierre los elementos que van con texto alineado a la derecha para simplificar
+        Para el mail y el telefono quuiero practicar enlaces de tipo mailto y tel
+        (no recomendado en la web por tema de span) 
+        Voy a crear tambien un div que encierre los elementos que van con texto alineado a la derecha para simplificar
     -->
     <header>
         <div class="text-right">
@@ -33,7 +37,10 @@
                 USA <br />
             </address>
             <a href="tel:1234567890"><strong>Tel:</strong> 123-456-7890 </a><br />
-            <!-- no recomendado hacer mailto: pero practicamos-->
+            <!-- 
+                en este caso como no estamos ocultando el correo, ya que aparece en el texto, 
+                vamos a aprovechar para practicar un enlace tipo mailto:
+            -->
             <a href="mailto:no_reply@example.com">
                 <strong>Email:</strong> no_reply@example.com
             </a>
